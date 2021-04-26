@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+/*Layouts*/
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: black;
+    color: rgb(255, 248, 236);
+}
+.imgFit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+input{
+    border: none;
+    background-color: #f5f5f5;
+    color: #242424;
+    padding: 5px 10px;
+}
+button{
+    background-color: none;
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 150px;
+}
+.subHeader{
+    width: 100%;
+    height: 110px;
+}
+.subHeader h1{
+    font-size: 84px;
+    font-weight: lighter;
+}
+nav{
+    width: 100%;
+    height: 40px;
+    color: chartreuse;
+}
+.itemNav{
+    height: 100%;
+    padding: 5px 10px;
+    margin:0 20px;
+    font-weight: bolder;
+}
+.itemNav:hover{
+    color: rgb(255, 248, 236);
+}
+section{
+    width: 100%;
+    padding: 40px 0;
+}
+.mainIndex{
+    width: 55%;
+    margin: 0 auto;
+}
+article{
+    margin-bottom: 30px;
+}
+.socialMedia{
+    width: 100%;
+    color: chartreuse;
+}
+.itemSocialMedia{
+    height: 50px;
+    padding: 0px 10px;
+    margin:0 20px;
+    font-size: 35px;
+}
+.itemSocialMedia:hover{
+    color: rgb(244, 255, 233);
+}
+footer{
+    width: 100%;
+    height: 65px;
+    border-top: 2px solid rgba(119, 119, 119, 0.555) ;
+}
+.itemFooter{
+    color: rgba(119, 119, 119, 0.555);
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    margin: 5px;
+    height: 100%;
+}
+.itemFooter:hover{
+    color:rgb(255, 248, 236);
+}
+/*
+#########
+Music Page
+#########
+*/
+.musicContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.musicContainer h1{
+    margin: 40px 0 20px;
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 40px;
+}
+.discWrapp{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+/*
+#########
+SingUp
+#########
+*/
+.signUpWrapp{
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signUpWrapp>h1{
+    margin: 40px 0 20px;
+    color: chartreuse;
+    font-size: 35px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formGroup1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+.formGroup2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+#email, #cp, #country{
+    margin-bottom: 10px;
+    background-color: inherit;
+    border-bottom: 1px solid cornsilk;
+    color: cornsilk;
+}
+#email:focus, #cp:focus, #country:focus{
+    outline: none;
+    border-bottom: 3px solid cornsilk;
+}
+/*
+#########
+Book
+#########
+*/
+.mainBook{
+    width: 85%;
+    margin: 0 auto;
+}
+.bookWrapp>section{
+    background-color: cornsilk;
+    color: black;
+}
+.itemBookWrapp{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.itemBook{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemBook>h1{
+    font-size: 42px;
+    margin-top: 20px;
+}
+.countryLinksWrapp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+.countryLink{
+    padding: 5px 10px;
+    height: 60px;
+    width: 240px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin: 24px 5px 0px;
+    font-size: 20px;
+}
+.countryLink:hover{
+    background-color: black;
+    color: cornsilk;
+}
+.descriptionBookWrapp{
+    width: 63%;
+    padding: 20px;
+}
+.descriptionBook>p{
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+/*
+#######################################################
+MEIDA
+QUERYS
+#######################################################
+
+######
+LAPTOPS
+######
+*/
+@media(max-width:1200px){
+    .container{
+        width: 1024px;
+    }
+}
+/*
+######
+IPADS
+######
+*/
+@media(max-width:1024px){
+    .container{
+        width: 90%;
+    }
+    .mainIndex{
+        width: 75%;
+    }
+    header{
+        height: auto;
+    }
+    .subHeader{
+        height: auto;
+        padding: 10px 5px;
+    }
+    .subHeader h1{
+        font-size: 60px;
+    }
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    .mainBook{
+        width: 100%;
+    }
+    .itemBook, .descriptionBookWrapp{
+        width: 75%;
+    }
+    .itemSocialMedia{
+        font-size: 30px;
+        margin: 0 15px;
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+}
+/*
+######
+CELLPHONES WIDE POSITION
+######
+*/
+@media(max-width:768px){
+    .subHeader h1{
+        font-size: 50px;
+    }
+    nav{
+        font-size: 14px;
+    }
+    .itemSocialMedia{
+        font-size: 22px;
+        margin: 0 8px;
+    }
+    .musicContainer h1{
+        font-size: 25px;
+    }
+    .discWrapp{
+        grid-template-columns: auto;
+        grid-gap: 8px;
+    }
+    .signUpWrapp{
+        width: 100%;
+        font-size: 14px;
+    }
+    .signUpWrapp h1{
+        font-size: 25px;
+    }
+    .itemBookWrapp{
+        font-size: 14px;
+    }
+    .itemBook h1{
+        font-size: 30px;
+    }
+    .countryLink{
+        height: 50px;
+        border-radius: 25px;
+        width: 200px;
+        font-size: 16px;
+    }
+    .itemFooter{
+        font-size: 10px;
+    }
+}
+
+/*
+#######
+CELLPHONES STANDARD POSITION
+#######
+*/
+@media(max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .subHeader h1{
+        font-size: 25px;
+    }
+    nav{
+        padding: 15px 0;
+        font-size: 12px;
+    }
+    .socialMedia{
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+    .itemSocialMedia{
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+        height: auto;
+    }
+    .itemFooter{
+        font-size: 8px;
+    }
+    .mainIndex{
+        width: 100%;
+    }
+    .signUpWrapp{
+        width: 95%;
+        font-size: 12px;
+    }
+    .signUpWrapp h1{
+        font-size: 16px;
+    }
+    .formGroup2{
+        grid-template-columns: auto;
+    }
+    input{
+        font-size: 12px;
+    }
+    .musicContainer h1{
+        font-size: 16px;
+        margin: 26px 0 0 0;
+    }
+    .discWrapp{
+        grid-gap:0px;
+    }
+    .itemBook{
+        width: 90%;
+        font-size: 12px;
+    }
+    .descriptionBook p {
+        line-height: 23px;
+    }
+    .itemBook h1{
+        font-size: 22px;
+    }
+    .countryLink{
+        width: 140px;
+        font-size: 12px;
+        height: 44px;
+        border-radius: 22px;
+    }
+}
